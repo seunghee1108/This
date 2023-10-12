@@ -9,3 +9,7 @@ console.log(a(function(){
   // 직접적으로 식별
   console.log(global);
 }))
+
+
+
+
