@@ -1,6 +1,11 @@
-function a () {
-  console.log(this);
+function a (callback) {
+  return callback();
 }
-a();
 
-
+console.log(a(function(){
+  // 저기요~
+  console.log(this) ;
+  console.log("------------------");
+  // 직접적으로 식별
+  console.log(global);
+}))
